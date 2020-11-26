@@ -1,10 +1,11 @@
+import java.io.IOException;
 import java.util.Scanner;
 
 public class RunMain {
     public static Scanner scanner = new Scanner(System.in);
     public static int counter = 0;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
        
         boolean isQuit = false;
         boolean QuitSubMenu = false;
@@ -74,6 +75,8 @@ public class RunMain {
                             reciever_money = scanner.nextInt();
                         }
                         payment[SignIn.signIN_index].sendMoney(reciever_money, payment);
+                    } }else if(sub_menu_choice == 5){
+                        storeUserData.store(accounts, sec, payment);
                     }
                 }
             } else {
