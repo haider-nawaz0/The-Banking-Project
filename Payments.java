@@ -12,7 +12,7 @@ public class Payments {
         return this.balance;
     }
     public void removeMoney(int money){
-        this.balance -= balance;
+        this.balance -= money;
     }
 
     public void displayBalance(){
